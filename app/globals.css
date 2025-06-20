@@ -426,6 +426,26 @@
   animation: liquid-shimmer 4s ease-in-out infinite;
 }
 
+/* Enhanced hover z-index for stats and interactive elements */
+.hover-top {
+  position: relative;
+}
+
+.hover-top:hover {
+  z-index: 9999 !important;
+}
+
+/* Ensure premium badge doesn't scale independently */
+.premium-badge {
+  transition: none !important;
+  transform: none !important;
+}
+
+.premium-badge:hover {
+  transform: none !important;
+  scale: none !important;
+}
+
 /* Smooth scroll offset for fixed header */
 .scroll-offset {
   scroll-margin-top: 120px;

@@ -86,7 +86,7 @@ export function HeroSection() {
               ].map((stat, index) => (
                 <div
                   key={index}
-                  className="text-center group liquid-glass rounded-2xl p-6 hover:scale-105 transition-all duration-300"
+                  className="text-center group liquid-glass rounded-2xl p-6 hover:scale-105 transition-all duration-300 relative hover:z-50"
                 >
                   <div className="flex items-center justify-center mb-3">
                     <stat.icon className="h-6 w-6 text-orange-400 group-hover:scale-110 transition-transform duration-300" />
@@ -159,7 +159,7 @@ export function HeroSection() {
                 </div>
               </div>
 
-              <div className="absolute top-1/2 right-0 liquid-glass-orange rounded-l-2xl p-4 animate-liquid-float delay-2000 z-30">
+              <div className="absolute top-1/2 right-0 liquid-glass-orange rounded-2xl p-4 animate-liquid-float delay-2000 z-30">
                 <div className="text-blue-300 font-bold text-sm">SECURE</div>
               </div>
 
